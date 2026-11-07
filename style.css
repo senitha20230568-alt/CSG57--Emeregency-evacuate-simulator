@@ -1,0 +1,250 @@
+/* =====================================
+   GENERAL PAGE STYLING
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #444444;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #222222;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+
+/* =====================================
+   NAVIGATION BAR
+===================================== */
+
+header {
+    background-color: #222222;
+    padding: 18px 6%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #FACC15;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #FACC15;
+}
+
+
+/* =====================================
+   GENERAL SECTIONS
+===================================== */
+
+section {
+    padding: 65px 10%;
+}
+
+section:nth-of-type(even) {
+    background-color: #FEFCE8;
+}
+
+section p {
+    max-width: 850px;
+}
+
+
+/* =====================================
+   BUTTONS AND LINKS
+===================================== */
+
+a {
+    color: #DC2626;
+}
+
+section a {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 12px 22px;
+    background-color: #DC2626;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section a:hover {
+    background-color: #B91C1C;
+}
+
+button {
+    background-color: #DC2626;
+    color: #FFFFFF;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #B91C1C;
+}
+
+
+/* =====================================
+   FEATURE AND TEAM CARDS
+===================================== */
+
+.team-member {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-left: 5px solid #F97316;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 6px;
+    max-width: 600px;
+}
+
+
+/* =====================================
+   CONTACT FORM
+===================================== */
+
+form {
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    color: #222222;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+form button {
+    margin-top: 20px;
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    background-color: #222222;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 900px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    section {
+        padding: 45px 7%;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        padding: 35px 6%;
+    }
+
+    h1 {
+        font-size: 29px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+}
