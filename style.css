@@ -288,3 +288,76 @@ footer p {
     background-color: #b71c2c;
     transform: translateY(-4px);
 }
+
+/* Contact Introduction with Logo */
+.contact-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.contact-intro-text {
+    flex: 1;
+}
+
+.contact-intro-logo img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .contact-intro {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-intro-logo img {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+/* How It Works - Side-by-Side Layout */
+.workflow-step {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.workflow-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.workflow-image {
+    flex: 0 0 42%;
+    max-width: 42%;
+    margin: 0;
+}
+
+.workflow-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+/* Mobile Responsive Layout */
+@media (max-width: 768px) {
+    .workflow-step {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .workflow-image {
+        flex: none;
+        max-width: 100%;
+        width: 100%;
+    }
+}

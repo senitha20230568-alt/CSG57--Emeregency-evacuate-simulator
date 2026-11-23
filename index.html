@@ -13,6 +13,70 @@
 
     <!-- Link the CSS file -->
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Homepage image layouts */
+        #hero,
+        #introduction {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 42px;
+        }
+
+        #hero .home-section-content,
+        #introduction .home-section-content {
+            flex: 1 1 55%;
+            min-width: 0;
+        }
+
+        #hero .home-section-image,
+        #introduction .home-section-image {
+            flex: 0 1 42%;
+            max-width: 42%;
+            margin: 0;
+        }
+
+        .home-section-image img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 12px;
+        }
+
+        /* Four-feature infographic */
+        .feature-highlights-image {
+            width: 100%;
+            max-width: 1000px;
+            margin: 30px auto 35px;
+            text-align: center;
+        }
+
+        .feature-highlights-image img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 12px;
+        }
+
+        @media (max-width: 768px) {
+            #hero,
+            #introduction {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            #hero .home-section-image,
+            #introduction .home-section-image {
+                flex: none;
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -23,7 +87,7 @@
 
             <!--project logo -->
            <a href="index.html" class="logo">
-              <img src="evacuate-logo.jpg"
+              <img src="images/evacuate-logo.jpg"
                   alt="EVACSIM emergency evacuation simulator logo">
              
            </a>
@@ -47,33 +111,44 @@
 
         <!-- HERO SECTION -->
         <section id="hero">
+    <div class="home-section-content">
+        <h1>Prepare. Simulate. Evacuate.</h1>
 
-            <h1>Prepare. Simulate. Evacuate.</h1>
+        <p>
+            Turn building floor plans into interactive 3D environments and practise emergency evacuations through realistic,
+            repeatable simulations. Prepare people to respond with confidence before an emergency happens.
+        </p>
 
-            <p>
-                Turn building floor plans into interactive 3D environments and practise emergency evacuations through realistic, repeatable simulations. Prepare people to respond with confidence before an emergency happens.
-            </p>
+        <a href="about.html" class="button">Discover EVACSIM</a>
+    </div>
 
-            <!-- Main call-to-action button -->
-            <a href="about.html" class="button">Discover EVACSIM</a>
-
-            
-
-        </section>
+    <figure class="home-section-image">
+        <img src="images/EVACSIM AI-Powered Evacuation Simulation.png"
+             alt="Illustration of an EVACSIM evacuation simulation displayed on a laptop"
+             loading="lazy">
+    </figure>
+</section>
 
 
         <!-- BRIEF PROJECT INTRODUCTION -->
         <section id="introduction">
+    <div class="home-section-content">
+        <h2>What is EVACSIM?</h2>
 
-            <h2>What is EVACSIM?</h2>
+        <p>
+            EVACSIM is a proposed training and evaluation tool that helps users explore building layouts, configure emergency
+            scenarios and assess how occupants can evacuate safely.
+        </p>
 
-            <p>
-                EVACSIM is a proposed training and evaluation tool that helps users explore building layouts, configure emergency scenarios and assess how occupants can evacuate safely.
-            </p>
+        <a href="about.html" class="button">Learn More</a>
+    </div>
 
-            <a href="about.html" class="button">Learn More</a>
-
-        </section>
+    <figure class="home-section-image">
+        <img src="images/EVACSIM Evacuation Planning Infographic.png"
+             alt="Illustration showing a building evacuation workflow using floor-plan information and AI"
+             loading="lazy">
+    </figure>
+</section>
 
 
         <!-- FEATURE HIGHLIGHTS -->
@@ -84,6 +159,12 @@
             <p>
                 Explore the main stages of preparing and evaluating an emergency evacuation, from recognising a floor plan to reviewing simulation results.
             </p>
+
+            <figure class="feature-highlights-image">
+                <img src="images/AI-Powered Building Evacuation Workflow.png"
+                     alt="Four EVACSIM feature illustrations: AI floor-plan recognition, 3D building generation, emergency simulation and simulation results"
+                     loading="lazy">
+            </figure>
 
             <div class="feature-container">
 

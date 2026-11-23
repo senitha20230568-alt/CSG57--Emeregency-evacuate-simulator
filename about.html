@@ -15,6 +15,49 @@
     <!-- Connect the shared CSS file -->
     <link rel="stylesheet" href="style.css">
 
+
+    <style>
+        /* About page: text on the left, illustration on the right */
+        .about-image-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 42px;
+        }
+
+        .about-image-section .about-section-content {
+            flex: 1 1 58%;
+            min-width: 0;
+        }
+
+        .about-image-section .about-section-image {
+            flex: 0 1 38%;
+            max-width: 38%;
+            margin: 0;
+        }
+
+        .about-section-image img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .about-image-section {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .about-image-section .about-section-image {
+                flex: none;
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -31,7 +74,7 @@
             <!-- Project logo or name -->
             <!--project logo -->
             <a href="index.html" class="logo">
-                <img src="evacuate-logo.jpg"
+                <img src="images/evacuate-logo.jpg"
                      alt="EVACSIM emergency evacuation simulator logo">
             </a>
 
@@ -76,177 +119,189 @@
         <!-- PROJECT OVERVIEW                          -->
         <!-- ========================================= -->
 
-        <section id="project-overview">
+        <section id="project-overview" class="about-image-section">
+    <div class="about-section-content">
+        <h2>Project Overview</h2>
 
-            <h2>Project Overview</h2>
+        <p>
+            EVACSIM is an AI-assisted emergency evacuation simulator
+            designed to help users practise and understand how people
+            can evacuate buildings during emergency situations. The
+            application allows users to upload a 2D building floor plan.
+            AI-assisted recognition is then used to identify important
+            building elements, such as walls, rooms, doors and windows.
+            Using this information, the system generates a 3D building
+            environment in Unreal Engine, which users can inspect and
+            prepare for an evacuation simulation.
+        </p>
 
-            <p>
-                EVACSIM is an AI-assisted emergency evacuation simulator
-                designed to help users practise and understand how people
-                can evacuate buildings during emergency situations. The
-                application allows users to upload a 2D building floor plan.
-                AI-assisted recognition is then used to identify important
-                building elements, such as walls, rooms, doors and windows.
-                Using this information, the system generates a 3D building
-                environment in Unreal Engine, which users can inspect and
-                prepare for an evacuation simulation.
-            </p>
+        <p>
+            The main purpose of EVACSIM is to provide an interactive
+            environment where users can practise evacuation scenarios
+            rather than relying only on instructions or observation.
+            The simulator is intended to support people involved in
+            building safety, emergency preparedness and evacuation
+            training, including students, building occupants and
+            training organisations.
+        </p>
+    </div>
 
-            <p>
-                The main purpose of EVACSIM is to provide an interactive
-                environment where users can practise evacuation scenarios
-                rather than relying only on instructions or observation.
-                The simulator is intended to support people involved in
-                building safety, emergency preparedness and evacuation
-                training, including students, building occupants and
-                training organisations.
-            </p>
-
-            <!-- ADD: Insert a relevant project image or illustration here. -->
-
-        </section>
+    <figure class="about-section-image">
+        <img src="images/project-overview.png"
+             alt="Illustration of a 2D floor plan being analysed by AI and transformed into a 3D building"
+             loading="lazy">
+    </figure>
+</section>
 
 
         <!-- ========================================= -->
         <!-- PROJECT BACKGROUND                        -->
         <!-- ========================================= -->
 
-        <section id="background">
+        <section id="background" class="about-image-section">
+    <div class="about-section-content">
+        <h2>Background</h2>
 
-            <h2>Background</h2>
+        <p>
+            Emergency evacuation training helps people understand how
+            to respond when they need to leave a building because of
+            an emergency, such as a fire. A common way to prepare
+            occupants is through planned evacuation drills. During
+            these drills, people practise following emergency
+            procedures, using escape routes and reaching a designated
+            assembly point. Drills can also help organisations identify
+            problems with their evacuation procedures.
+        </p>
 
-            <p>
-                Emergency evacuation training helps people understand how
-                to respond when they need to leave a building because of
-                an emergency, such as a fire. A common way to prepare
-                occupants is through planned evacuation drills. During
-                these drills, people practise following emergency
-                procedures, using escape routes and reaching a designated
-                assembly point. Drills can also help organisations identify
-                problems with their evacuation procedures.
-            </p>
+        <p>
+            However, carrying out a real evacuation drill can require
+            planning and coordination, and it may interrupt normal
+            activities within a building. Research has also highlighted
+            challenges in assessing how effective drills are and how
+            well their results represent people's behaviour during
+            unexpected emergencies. This creates an opportunity for
+            simulation-based training to provide an additional way to
+            practise different scenarios and review evacuation
+            performance in a controlled environment.
+        </p>
 
-            <p>
-                However, carrying out a real evacuation drill can require
-                planning and coordination, and it may interrupt normal
-                activities within a building. Research has also highlighted
-                challenges in assessing how effective drills are and how
-                well their results represent people's behaviour during
-                unexpected emergencies. This creates an opportunity for
-                simulation-based training to provide an additional way to
-                practise different scenarios and review evacuation
-                performance in a controlled environment.
-            </p>
+        <div class="statistics">
+            <div class="statistic">
+                <h3>13,591 evacuees</h3>
 
-            <div class="statistics">
+                <p>
+                    A research database brought together pre-evacuation
+                    information from 103 evacuation drills and 9 fire
+                    incidents across 16 countries, involving a total of
+                    13,591 evacuees. This demonstrates the importance
+                    of collecting and analysing evacuation data to
+                    understand how people respond during emergencies.
+                </p>
 
-                <!-- ADD: Insert a relevant statistic -->
-
-                <div class="statistic">
-
-                    <h3>13,591 evacuees</h3>
-
-                    <p>
-                        A research database brought together pre-evacuation
-                        information from 103 evacuation drills and 9 fire
-                        incidents across 16 countries, involving a total of
-                        13,591 evacuees. This demonstrates the importance
-                        of collecting and analysing evacuation data to
-                        understand how people respond during emergencies.
-                    </p>
-
-                    <small>
-                        Source: Lovreglio, R., Kuligowski, E., Gwynne, S. and
-                        Boyce, K. (2019), A Pre-Evacuation Database for Use
-                        in Egress Simulations.
-                        <a href="https://doi.org/10.1016/j.firesaf.2018.12.009"
-                           target="_blank" rel="noopener noreferrer">
-                            Read the research
-                        </a>.
-                    </small>
-
-                </div>
-
-                
-
+                <small>
+                    Source: Lovreglio, R., Kuligowski, E., Gwynne, S. and
+                    Boyce, K. (2019), A Pre-Evacuation Database for Use
+                    in Egress Simulations.
+                    <a href="https://doi.org/10.1016/j.firesaf.2018.12.009"
+                       target="_blank" rel="noopener noreferrer">
+                        Read the research
+                    </a>.
+                </small>
             </div>
+        </div>
+    </div>
 
-        </section>
+    <figure class="about-section-image">
+        <img src="images/background.png"
+             alt="Illustration of people evacuating a building during an emergency"
+             loading="lazy">
+    </figure>
+</section>
 
 
         <!-- ========================================= -->
         <!-- PROBLEM STATEMENT                         -->
         <!-- ========================================= -->
 
-        <section id="problem-statement">
+        <section id="problem-statement" class="about-image-section">
+    <div class="about-section-content">
+        <h2>Problem Statement</h2>
 
-            <h2>Problem Statement</h2>
+        <p>
+            Traditional evacuation drills allow people to practise
+            emergency procedures, but they do not always provide an
+            easy way to experience a wide range of emergency situations
+            in a controlled and repeatable environment. Organising
+            different drills can require time and coordination, while
+            evaluating how people respond and identifying areas for
+            improvement can also be challenging.
+        </p>
 
-            <p>
-                Traditional evacuation drills allow people to practise
-                emergency procedures, but they do not always provide an
-                easy way to experience a wide range of emergency situations
-                in a controlled and repeatable environment. Organising
-                different drills can require time and coordination, while
-                evaluating how people respond and identifying areas for
-                improvement can also be challenging.
-            </p>
+        <p>
+            In addition, practising an evacuation for a specific
+            building requires an understanding of its layout, including
+            rooms, doors, corridors and possible escape routes.
+            Without an accessible way to recreate that layout and
+            simulate different emergency conditions, it can be
+            difficult to provide repeated, interactive practice and
+            consistently review evacuation performance.
+        </p>
 
-            <p>
-                In addition, practising an evacuation for a specific
-                building requires an understanding of its layout, including
-                rooms, doors, corridors and possible escape routes.
-                Without an accessible way to recreate that layout and
-                simulate different emergency conditions, it can be
-                difficult to provide repeated, interactive practice and
-                consistently review evacuation performance.
-            </p>
+        <p>
+            EVACSIM aims to address this gap by providing a system
+            that can convert a building floor plan into a 3D
+            environment and use it for configurable emergency
+            evacuation simulations. This gives users an additional
+            way to practise scenarios and review the results.
+        </p>
+    </div>
 
-            <p>
-                EVACSIM aims to address this gap by providing a system
-                that can convert a building floor plan into a 3D
-                environment and use it for configurable emergency
-                evacuation simulations. This gives users an additional
-                way to practise scenarios and review the results.
-            </p>
-
-        </section>
+    <figure class="about-section-image">
+        <img src="images/problem-statement.png"
+             alt="Illustration showing a crowded evacuation corridor and potential safety challenges"
+             loading="lazy">
+    </figure>
+</section>
 
 
         <!-- ========================================= -->
         <!-- PROPOSED SOLUTION                         -->
         <!-- ========================================= -->
 
-        <section id="proposed-solution">
+        <section id="proposed-solution" class="about-image-section">
+    <div class="about-section-content">
+        <h2>Our Proposed Solution</h2>
 
-            <h2>Our Proposed Solution</h2>
+        <p>
+            EVACSIM proposes an interactive evacuation simulator
+            that transforms a 2D building floor plan into a 3D
+            environment that can be used for emergency training.
+            AI-assisted image recognition identifies important
+            building elements, such as walls, rooms, doors and
+            windows. The recognised information is processed and
+            used to generate the building environment in Unreal
+            Engine.
+        </p>
 
-            <p>
-                EVACSIM proposes an interactive evacuation simulator
-                that transforms a 2D building floor plan into a 3D
-                environment that can be used for emergency training.
-                AI-assisted image recognition identifies important
-                building elements, such as walls, rooms, doors and
-                windows. The recognised information is processed and
-                used to generate the building environment in Unreal
-                Engine.
-            </p>
+        <p>
+            Users can inspect the generated building and make
+            corrections where necessary before setting up an
+            emergency scenario, such as a fire. They can then
+            experience the evacuation simulation and review
+            information about the outcome, including evacuation
+            time and the number of occupants evacuated. This
+            provides an opportunity to practise different
+            situations and evaluate performance in a controlled
+            virtual environment.
+        </p>
+    </div>
 
-            <p>
-                Users can inspect the generated building and make
-                corrections where necessary before setting up an
-                emergency scenario, such as a fire. They can then
-                experience the evacuation simulation and review
-                information about the outcome, including evacuation
-                time and the number of occupants evacuated. This
-                provides an opportunity to practise different
-                situations and evaluate performance in a controlled
-                virtual environment.
-            </p>
-
-            
-
-        </section>
+    <figure class="about-section-image">
+        <img src="images/proposed-solution.png"
+             alt="Illustration of the EVACSIM workflow from floor-plan upload through AI recognition to 3D evacuation simulation"
+             loading="lazy">
+    </figure>
+</section>
 
 
         <!-- ========================================= -->
