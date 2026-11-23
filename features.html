@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- ADD: Write a short description of the Features page -->
-    <meta name="description" content="">
+    <meta name="description" content="Explore EVACSIM features, including AI-assisted floor-plan recognition, 3D building generation and interactive emergency evacuation simulation.">
 
-    <title>Features | EVACUATE</title>
+    <title>Features | EVACSIM</title>
 
     <!-- Connect the shared CSS file -->
     <link rel="stylesheet" href="style.css">
@@ -25,8 +25,12 @@
 
         <nav>
 
-            <!-- Project logo or name -->
-            <a href="index.html" class="logo">EVACUATE</a>
+            <!--project logo -->
+           <a href="index.html" class="logo">
+              <img src="evacuate-logo.jpg"
+                  alt="EVACSIM emergency evacuation simulator logo">
+             
+           </a>
 
             <!-- Navigation links -->
             <ul>
@@ -52,11 +56,12 @@
         <!-- PAGE INTRODUCTION -->
         <section id="page-introduction">
 
-            <h1>EVACUATE Features</h1>
+            <h1>EVACSIM Features</h1>
 
             <p>
-                <!-- ADD: Write a short introduction explaining what
-                visitors will discover on this page. -->
+                Discover the main features of EVACSIM and how they work
+                together to turn building floor plans into interactive
+                environments for emergency evacuation practice.
             </p>
 
         </section>
@@ -68,9 +73,21 @@
             <h2>AI Floor-Plan Recognition</h2>
 
             <p>
-                <!-- ADD: Explain how users upload 2D floor plans and
-                how AI identifies building elements such as walls,
-                doors, windows and rooms. -->
+                Users can upload a 2D floor plan of a building to begin
+                creating a virtual environment. AI-assisted image
+                recognition analyses the uploaded plan to identify
+                important building elements, including walls, rooms,
+                doors and windows. The recognised information is then
+                organised into structured data that can be processed
+                by the system and used for 3D building generation.
+            </p>
+
+            <p>
+                This feature reduces the need to manually recreate the
+                entire building layout and provides the starting point
+                for the evacuation simulation. Users can review the
+                recognition output and make corrections to the generated
+                building in the next stage if necessary.
             </p>
 
             <!-- ADD: Insert an image showing a sample uploaded
@@ -85,9 +102,21 @@
             <h2>3D Building Generation</h2>
 
             <p>
-                <!-- ADD: Explain how the recognised floor-plan
-                information is used to generate a 3D building
-                environment in Unreal Engine. -->
+                After the AI-assisted recognition stage, the identified
+                building elements are processed and organised into
+                structured data. This information is passed to Unreal
+                Engine, where the system uses predefined 3D assets and
+                components to construct a virtual version of the building.
+                Elements such as walls, doors, windows and rooms are
+                positioned according to the recognised floor-plan layout.
+            </p>
+
+            <p>
+                The result is a 3D building environment that users can
+                view and explore before starting an evacuation simulation.
+                This approach focuses on generating the environment from
+                the uploaded floor plan rather than asking AI to create
+                the 3D models themselves.
             </p>
 
             <!-- ADD: Insert a screenshot of the generated 3D building. -->
@@ -101,11 +130,20 @@
             <h2>3D Building Inspection and Editing</h2>
 
             <p>
-                <!-- ADD: Explain how users can inspect the generated
-                building and correct recognition mistakes.
+                After the 3D building has been generated, users can inspect
+                the environment to check whether it accurately represents
+                the uploaded floor plan. This allows them to identify
+                recognition or layout mistakes before running an
+                evacuation simulation.
+            </p>
 
-                Mention possible actions such as adding, moving
-                or deleting walls and doors. -->
+            <p>
+                If changes are needed, users can make corrections to
+                building elements using the available editing tools.
+                Possible actions include adding, moving or deleting
+                walls and doors. Reviewing and correcting the building
+                helps ensure that the virtual environment is suitable
+                for the intended evacuation scenario.
             </p>
 
             <!-- ADD: Insert screenshots showing the 3D inspection
@@ -120,11 +158,18 @@
             <h2>Emergency Scenario Configuration</h2>
 
             <p>
-                <!-- ADD: Explain how users configure emergency scenarios.
+                Before starting a simulation, users can configure an
+                emergency scenario to define the conditions they want
+                to practise. The scenario setup can include selecting
+                an emergency type, such as a fire, and choosing where
+                the hazard begins within the generated building.
+            </p>
 
-                Include relevant options such as emergency type,
-                hazard location, difficulty and number of occupants,
-                depending on the final application design. -->
+            <p>
+                Users can also configure scenario settings such as the
+                difficulty level and the number of occupants involved.
+                These options allow different evacuation situations to
+                be prepared and practised within the virtual environment.
             </p>
 
             <!-- ADD: Insert a screenshot of the scenario configuration screen. -->
@@ -138,11 +183,21 @@
             <h2>Evacuation Simulation</h2>
 
             <p>
-                <!-- ADD: Explain how users practise evacuations
-                inside the generated 3D environment.
+                Once the building and emergency scenario are configured,
+                users can start an evacuation simulation inside the
+                generated 3D environment. The user can experience the
+                building layout and practise moving towards available
+                exits while the selected emergency conditions are active.
+            </p>
 
-                Describe the player, NPCs, movement and emergency
-                conditions supported by the simulator. -->
+            <p>
+                The simulation uses predefined movement behaviour and
+                physics for the player and non-player characters (NPCs).
+                NPCs represent other building occupants and allow users
+                to observe how an evacuation may unfold with multiple
+                people in the environment. This provides an interactive
+                way to practise evacuation procedures under different
+                scenario settings.
             </p>
 
             <!-- ADD: Insert an image or screenshot of an evacuation simulation. -->
@@ -156,11 +211,22 @@
             <h2>Simulation Results and Performance</h2>
 
             <p>
-                <!-- ADD: Explain what information users receive
-                after completing a simulation.
+                After a simulation is completed, users can review a
+                summary of the evacuation outcome. The results can
+                include the total evacuation time and the number of
+                occupants who successfully reached safety. These
+                measurements help users understand how the evacuation
+                progressed under the selected scenario conditions.
+            </p>
 
-                Examples may include evacuation time, number of
-                occupants evacuated and safety-related performance. -->
+            <p>
+                By reviewing the results, users can identify areas
+                where the evacuation process may need improvement.
+                They can then adjust the building setup or scenario
+                settings and run another simulation to compare the
+                outcomes. This makes it possible to evaluate different
+                evacuation approaches in a repeatable virtual
+                environment.
             </p>
 
             <!-- ADD: Insert a screenshot of the simulation results dashboard. -->
@@ -168,32 +234,18 @@
         </section>
 
 
-        <!-- FEATURE 7: LEADERBOARD -->
-        <section id="leaderboard">
-
-            <h2>Leaderboard</h2>
-
-            <p>
-                <!-- ADD: Explain how the leaderboard compares
-                users who complete the same evacuation scenario.
-
-                Mention how users can compare their performance
-                and scores. -->
-            </p>
-
-            <!-- ADD: Insert a screenshot of the leaderboard interface. -->
-
-        </section>
+        
 
 
         <!-- CALL TO ACTION -->
         <section id="explore-prototype">
 
-            <h2>Explore EVACUATE</h2>
+            <h2>Explore EVACSIM</h2>
 
             <p>
-                <!-- ADD: Write a short message encouraging visitors
-                to explore the application prototype. -->
+                Explore the EVACSIM prototype to see how the main
+                features connect and how users can move through the
+                evacuation simulation workflow.
             </p>
 
             <a href="prototype.html" class="button">
@@ -209,7 +261,7 @@
     <!-- FOOTER -->
     <footer>
 
-        <p>&copy; 2026 EVACUATE. All Rights Reserved.</p>
+        <p>&copy; 2026 EVACSIM. All Rights Reserved.</p>
 
         <div class="footer-links">
 

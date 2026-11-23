@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How It Works | EVACUATE</title>
+    <title>How It Works | EVACSIM</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +11,12 @@
     <!-- Navigation Bar -->
     <header>
         <nav>
-            <a href="index.html" class="logo">EVACUATE</a>
+            <!--project logo -->
+           <a href="index.html" class="logo">
+              <img src="evacuate-logo.jpg"
+                  alt="EVACSIM emergency evacuation simulator logo">
+             
+           </a>
 
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -28,10 +33,10 @@
 
     <!-- Page Introduction -->
     <section>
-        <h1>How EVACUATE Works</h1>
+        <h1>How EVACSIM Works</h1>
 
         <p>
-            Discover how EVACUATE transforms a 2D building floor plan
+            Discover how EVACSIM transforms a 2D building floor plan
             into an interactive 3D emergency evacuation simulation.
         </p>
     </section>
@@ -42,9 +47,16 @@
         <h2>Step 1: Upload a Floor Plan</h2>
 
         <p>
-            Users upload a 2D floor plan of the building they want to
-            simulate. The floor plan acts as the starting point for
-            creating the virtual environment.
+            Users begin by selecting and uploading a 2D floor plan of the
+            building they want to simulate. The uploaded plan provides the
+            layout information needed to create the virtual environment.
+        </p>
+
+        <p>
+            For the best recognition results, users should provide a clear
+            and readable floor plan that shows the building layout and its
+            main structural elements. Once uploaded, the plan is ready for
+            the AI recognition stage.
         </p>
 
         <!-- ADD: Insert an image showing the floor plan upload screen. -->
@@ -56,9 +68,17 @@
         <h2>Step 2: AI Floor-Plan Recognition</h2>
 
         <p>
-            The AI analyses the uploaded floor plan and identifies
-            important building elements such as walls, rooms, doors
-            and windows.
+            The AI analyses the uploaded floor plan and identifies key
+            building elements, including walls, rooms, doors and windows.
+            It interprets the layout and converts the recognised elements
+            into structured information that can be processed by the system.
+        </p>
+
+        <p>
+            The recognition output is used in the next stages to help create
+            the building layout in 3D. Because automated recognition may not
+            be perfect, users can review the recognised layout and correct
+            any mistakes before continuing.
         </p>
 
         <!-- ADD: Insert an image showing the AI recognition results. -->
@@ -70,8 +90,16 @@
         <h2>Step 3: Review and Correct the Building Layout</h2>
 
         <p>
-            Users can review the recognised building layout and make
-            corrections if any elements have been incorrectly identified.
+            Before generating the 3D building, users can inspect the layout
+            produced by the AI. They can check whether the recognised rooms
+            and structural elements match the original floor plan.
+        </p>
+
+        <p>
+            If an element has been missed or identified incorrectly, users
+            can make corrections to the layout. This review stage helps
+            improve the accuracy of the building representation before it
+            is used in the evacuation simulation.
         </p>
 
         <!-- ADD: Insert an image showing the building inspection or editing interface. -->
@@ -83,8 +111,17 @@
         <h2>Step 4: Generate the 3D Building</h2>
 
         <p>
-            The processed floor-plan information is used to generate
-            a 3D representation of the building inside Unreal Engine.
+            After the layout has been reviewed, the processed floor-plan
+            information is sent to Unreal Engine 5. The system uses this
+            structured information to position predefined 3D components,
+            such as walls, floors, doors and other building elements.
+        </p>
+
+        <p>
+            This process creates a 3D representation of the uploaded
+            building layout. The AI recognises and organises the floor-plan
+            information, while Unreal Engine is responsible for generating
+            the 3D environment.
         </p>
 
         <!-- ADD: Insert a screenshot of the generated 3D building. -->
@@ -96,9 +133,17 @@
         <h2>Step 5: Configure an Emergency Scenario</h2>
 
         <p>
-            Users configure an emergency scenario by selecting the
-            emergency type, hazard location, difficulty and other
-            simulation settings.
+            Once the 3D building is ready, users can configure the emergency
+            scenario they want to practise. They can select the type of
+            emergency, such as a fire, and specify where the hazard begins
+            within the building.
+        </p>
+
+        <p>
+            Users can also adjust available simulation settings, such as
+            the difficulty and the number of occupants. These settings
+            define the conditions for the evacuation exercise before it
+            begins.
         </p>
 
         <!-- ADD: Insert a screenshot of the simulation setup screen. -->
@@ -110,10 +155,17 @@
         <h2>Step 6: Run the Evacuation Simulation</h2>
 
         <p>
-            Users enter the virtual environment and experience the
-            emergency scenario. The simulation includes predefined
-            character movements, environmental hazards and evacuation
-            routes.
+            When the user starts the simulation, the emergency scenario
+            takes place inside the generated 3D building. The user can
+            experience the environment while occupants follow predefined
+            movement behaviour and available evacuation routes.
+        </p>
+
+        <p>
+            The simulation represents the selected hazards, such as fire,
+            and allows users to observe how the emergency affects movement
+            through the building. This provides an opportunity to practise
+            evacuation decisions in a controlled virtual environment.
         </p>
 
         <!-- ADD: Insert a screenshot of the evacuation simulation. -->
@@ -125,9 +177,17 @@
         <h2>Step 7: View Results and Performance</h2>
 
         <p>
-            After the simulation, users can review the results,
-            including evacuation time, the number of occupants
-            evacuated and other performance measurements.
+            When the simulation ends, users can review a summary of the
+            evacuation performance. The results include the total
+            evacuation time and the number of occupants who successfully
+            reached safety.
+        </p>
+
+        <p>
+            These measurements help users understand how the evacuation
+            scenario unfolded and identify areas that may need improvement.
+            Users can use the results to review their performance and
+            compare different attempts under the same scenario conditions.
         </p>
 
         <!-- ADD: Insert a screenshot of the simulation results screen. -->
@@ -136,11 +196,11 @@
 
     <!-- Call to Action -->
     <section>
-        <h2>Explore the EVACUATE Prototype</h2>
+        <h2>Explore the EVACSIM Prototype</h2>
 
         <p>
             Explore the proposed interface and experience the
-            workflow of the EVACUATE system.
+            workflow of the EVACSIM system.
         </p>
 
         <a href="prototype.html">View Prototype</a>
@@ -149,7 +209,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 EVACUATE. All rights reserved.</p>
+        <p>&copy; 2026 EVACSIM. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
