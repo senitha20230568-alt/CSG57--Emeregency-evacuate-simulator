@@ -49,3 +49,23 @@ document.querySelectorAll('a[href^="#"]').forEach(function(link) {
     });
 
 });
+
+// Back to Top Button
+const backToTopButton = document.getElementById("backToTop");
+
+// Show button when scrolling down
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 300) {
+        backToTopButton.style.display = "flex";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+});
+
+// Scroll smoothly to the top when clicked
+backToTopButton.addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});

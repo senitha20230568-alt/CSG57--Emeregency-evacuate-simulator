@@ -255,3 +255,36 @@ footer p {
         font-size: 23px;
     }
 }
+
+/* Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+
+    background-color: #e63946;
+    color: white;
+
+    border: none;
+    border-radius: 50%;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1000;
+
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#backToTop:hover {
+    background-color: #b71c2c;
+    transform: translateY(-4px);
+}
